@@ -594,6 +594,11 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.our-products-item {
+    display: flex;
+    flex-direction: column;
+}
+
 .our-products-item-image {
     width: 300px;
     min-height: 204px;
@@ -613,11 +618,16 @@
 }
 
 .our-products-item-text {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
     box-sizing: border-box;
+
     width: 100%;
     margin-top: -32px;
-    min-height: 267px;
-    padding: 48px 20px 0;
+    padding: 48px 20px 26px;
+
     border: 3px solid #b59f5b;
 }
 

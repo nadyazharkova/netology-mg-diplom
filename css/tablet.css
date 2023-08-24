@@ -207,13 +207,15 @@
     justify-content: space-between;
     box-sizing: border-box;
     
-    max-width: 697px;
+    max-width: 1200px;
     margin: 50px auto 0;
-    padding: 0 15px;
+    padding: 0 35px;
 }
 
 .main-news-image {
-    min-width: 390px;
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
     height: 100%;
 }
 
@@ -282,7 +284,7 @@
     content: "";
 
     display: block;
-    width: 390px;
+    width: 100%;
     height: 3px;
     margin: 19px auto 40px;
 
@@ -549,9 +551,9 @@
 .our-products {
     box-sizing: border-box;
     
-    max-width: 697px;
+    max-width: 1200px;
     margin: 57px auto 0;
-    padding: 0 15px;
+    padding: 0 35px;
 }
 
 .our-products-title {
@@ -580,33 +582,40 @@
     grid-template-columns: 1fr 1fr ;
 }
 
+.our-products-item {
+    display: flex;
+    flex-direction: column;
+}
+
 .our-products-item-image {
-    width: 292px;
-    min-height: 228px;
+    width: 300px;
+    min-height: 204px;
     margin: auto;
 }
 
 .our-products-item:nth-child(1) > .our-products-item-image {
-    background-image: url(../images/shop-item-tablet1.jpg);
-    background-repeat: no-repeat;
+    background-image: url(../images/shop-item-desk1.jpg);
 }
 
 .our-products-item:nth-child(2) > .our-products-item-image {
-    background-image: url(../images/shop-item-tablet2.jpg);
-    background-repeat: no-repeat;
+    background-image: url(../images/shop-item-desk2.jpg);
 }
 
 .our-products-item:nth-child(3) > .our-products-item-image {
-    background-image: url(../images/shop-item-tablet3.jpg);
-    background-repeat: no-repeat;
+    background-image: url(../images/shop-item-desk3.jpg);
 }
 
 .our-products-item-text {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
     box-sizing: border-box;
+
     width: 100%;
     margin-top: -32px;
-    min-height: 267px;
-    padding: 48px 20px 0;
+    padding: 48px 20px 26px;
+
     border: 3px solid #b59f5b;
 }
 
