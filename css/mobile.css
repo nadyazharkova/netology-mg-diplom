@@ -682,3 +682,64 @@
 .our-products-item-button:hover {
     background-color: #000000;
 }
+
+.footer {
+    box-sizing: border-box;
+    max-width: 767px;
+    margin: 50px auto 0;
+    padding: 0 15px;
+
+    text-align: center;
+}
+
+
+.footer-address-social-media {
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 31px 0;
+
+    background-color: #f4f7f6;
+}
+
+.footer-list-social-media {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+}
+
+.footer-social-media {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.dribbble {
+    background-image: url(../svg/001-dribbble.svg);
+}
+
+.pinterest {
+    background-image: url(../svg/001-pinterest.svg);
+}
+
+.tumblr {
+    background-image: url(../svg/003-tumblr.svg);
+}
+
+.footer-social-media-link {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.copyright {
+    display: block;
+    margin-top: 44px;
+    margin-bottom: 40px;
+
+    font-weight: 700;
+
+    color: #999999;
+}
