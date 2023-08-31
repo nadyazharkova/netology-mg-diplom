@@ -6,8 +6,8 @@
     <title>Netology MG</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="css/desktop.css" rel="stylesheet" media="(min-width: 1200px)">
-    <link href="css/tablet.css" rel="stylesheet" media="(min-width: 768px) and (max-width: 1199px)">
-    <link href="css/mobile.css" rel="stylesheet" media="(min-width: 360px) and (max-width: 768px)">
+    <link href="css/tablet.css" rel="stylesheet" media="(min-width: 641px) and (max-width: 1199px)">
+    <link href="css/mobile.css" rel="stylesheet" media="(max-width: 640px)">
 </head>
 <body>
     <header class="header">
@@ -53,7 +53,7 @@
         </div>
         <h1 class="header-title">Блог о творчестве, спорте, и образе жизни</h1>
     </header>
-    <section class="now-in-trends">
+    <article class="now-in-trends">
         <h2 class="now-in-trends-title">Сейчас в тренде</h2>
         <div class="trends-cards">
             <div class="trend">
@@ -117,7 +117,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </article>
     <div class="page">
         <main class="main">
             <article class="main-news">
@@ -383,8 +383,19 @@
         <h2 class="our-products-title">Наши изделия</h2>
         <div class="our-products-items">
             <div class="our-products-item">
-                <div class="our-products-item-image">
-                    <span class="visually-hidden">Фото</span>
+                <div class="our-products-item-images">
+                    <picture class="our-products-item-image">
+                        <source 
+                        media="(max-width: 640px)"
+                        srcset="images/shop-item-mobile1.jpg">
+                        <source 
+                        media="(min-width: 641px) and (max-width: 1199px)"
+                        srcset="images/shop-item-tablet1.jpg">
+                        <source 
+                        media="(min-width: 1200px)"
+                        srcset="images/shop-item-desk1.jpg">
+                        <img src="images/shop-item-desk1.jpg" alt="" class="our-products-item-image">
+                    </picture>
                 </div>
                 <div class="our-products-item-text">
                     <h3 class="our-products-item-title">Подушки на диван</h3>
@@ -401,8 +412,19 @@
                 </div>
             </div>
             <div class="our-products-item">
-                <div class="our-products-item-image">
-                    <span class="visually-hidden">Фото</span>
+                <div class="our-products-item-images">
+                    <picture class="our-products-item-image">
+                        <source 
+                        media="(max-width: 640px)"
+                        srcset="images/shop-item-mobile2.jpg">
+                        <source 
+                        media="(min-width: 641px) and (max-width: 1199px)"
+                        srcset="images/shop-item-tablet2.jpg">
+                        <source 
+                        media="(min-width: 1200px)"
+                        srcset="images/shop-item-desk2.jpg">
+                        <img src="images/shop-item-desk2.jpg" alt="" class="our-products-item-image">
+                    </picture>
                 </div>
                 <div class="our-products-item-text">
                     <h3 class="our-products-item-title">Кукла &laquo;Зайчик&raquo;</h3>
@@ -418,8 +440,19 @@
                 </div>
             </div>
             <div class="our-products-item">
-                <div class="our-products-item-image">
-                    <span class="visually-hidden">Фото</span>
+                <div class="our-products-item-images">
+                    <picture class="our-products-item-image">
+                        <source 
+                        media="(max-width: 640px)"
+                        srcset="images/shop-item-mobile3.jpg">
+                        <source 
+                        media="(min-width: 641px) and (max-width: 1199px)"
+                        srcset="images/shop-item-tablet3.jpg">
+                        <source 
+                        media="(min-width: 1200px)"
+                        srcset="images/shop-item-desk3.jpg">
+                        <img src="images/shop-item-desk3.jpg" alt="" class="our-products-item-image">
+                    </picture>
                 </div>
                 <div class="our-products-item-text">
                     <h3 class="our-products-item-title">Шестиугольная рамка</h3>
@@ -459,5 +492,42 @@
         </address>
         <span class="copyright">Copyright © 2009–2019 City Blog LLC.</span>
     </footer>
+    <!-- <div class="popup">
+        <div class="popup-content">
+            <div class="popup-close">
+                <img src="svg/form-x.svg" alt="закрыть" class="popup-close-image">
+            </div>
+            <h2 class="popup-content-title">Ваш фидбек</h2>
+            <form class="form-select">
+                <label class="form-select-label">
+                    <span class="form-select-label-text">Как часто вы заходите на сайт?</span>
+                    <select class="form-select-label-select">
+                        <option value="1" selected>Почти каждый день</option>
+                        <option value="2">Раз в несколько дней</option>
+                        <option value="3">Раз в несколько недель</option>
+                        <option value="4">Несколько раз в год</option>
+                    </select>
+                </label>
+            </form>
+            <form class="form-radio">
+                <label class="form-radio-label">
+                    <span class="form-radio-label-text">Вы подписаны на e-mail рассылку?</span>
+                    <input type="radio" name="radio-button" class="input-radio">
+                    <span class="input-radio-button">Да</span>
+                </label>
+                <label class="form-radio-label">
+                    <input type="radio" name="radio-button" class="input-radio"> 
+                    <span class="input-radio-button">Нет</span>
+                </label>
+            </form>
+            <form class="form-message">
+                <label class="form-message-label">
+                    <span class="form-message-label-text">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+                    <textarea class="form-message-label-textarea" placeholder="Может, больше рецептов?" required></textarea>
+                </label>
+            </form>
+            <button class="popup-button">Отправить</button>
+        </div>
+    </div> -->
 </body>
 </html>
