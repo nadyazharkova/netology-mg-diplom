@@ -1,3 +1,12 @@
+@media (orientation: landscape) and (min-width: 641px) {
+    .trends-cards {
+        display: grid;
+        gap: 4px;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 18px;
+    }
+}
+
 body {
     margin: 0;
     border: 0;
@@ -8,7 +17,7 @@ body {
     z-index: 0;
     
     min-width: 320px;
-    height: 100vh;
+    padding: 0 0 45px;
     
     background-image: url(../images/banner-mobile.jpg);
     background-color: #000000;
@@ -770,6 +779,7 @@ body {
 
     width: 17px;
     height: 17px;
+    background-color: rgba( 0, 0, 0, 0);
 }
 
 .popup-close:hover {
@@ -778,6 +788,7 @@ body {
 
 .popup-close-image {
     object-fit: cover;
+    background-color: none;
 }
 
 .popup-content-title {
@@ -797,7 +808,7 @@ body {
     background: #b59f5b;
 }
 
-.form-select {
+.select {
     display: block;
     width: 100%;
     margin-bottom: 35px;
@@ -835,7 +846,7 @@ body {
     outline: 2px solid #b59f5b;
 }
 
-.form-radio {
+.radio {
     display: block;
     width: 100%;
     margin-bottom: 35px;

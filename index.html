@@ -75,10 +75,7 @@
                 <div class="trend-text">
                     <ul class="trend-text-tags">
                         <li class="trend-text-tag">
-                            <a href="#" class="trend-text-tag-link">Lifestyle</a>
-                        </li>
-                        <li class="trend-text-tag">
-                            <a href="#" class="trend-text-tag-link">Interior</a>
+                            <a href="#" class="trend-text-tag-link">Food</a>
                         </li>
                     </ul>
                     <h3 class="trend-text-title">
@@ -93,7 +90,7 @@
                             <a href="#" class="trend-text-tag-link">Lifestyle</a>
                         </li>
                         <li class="trend-text-tag">
-                            <a href="#" class="trend-text-tag-link">Interior</a>
+                            <a href="#" class="trend-text-tag-link">Travel</a>
                         </li>
                     </ul>
                     <h3 class="trend-text-title">
@@ -105,10 +102,10 @@
                 <div class="trend-text">
                     <ul class="trend-text-tags">
                         <li class="trend-text-tag">
-                            <a href="#" class="trend-text-tag-link">Lifestyle</a>
+                            <a href="#" class="trend-text-tag-link">Food</a>
                         </li>
                         <li class="trend-text-tag">
-                            <a href="#" class="trend-text-tag-link">Interior</a>
+                            <a href="#" class="trend-text-tag-link">Health</a>
                         </li>
                     </ul>
                     <h3 class="trend-text-title">
@@ -407,7 +404,7 @@
                             <div class="our-products-item-value-sale">1000 p</div>
                             <div class="our-products-item-value">800 p</div>
                         </div>
-                        <div class="our-products-item-button">В магазин</div>
+                        <button class="our-products-item-button">В магазин</button>
                     </div>
                 </div>
             </article>
@@ -435,7 +432,7 @@
                         <div class="our-products-item-price">
                             <div class="our-products-item-value">3500 p</div>
                         </div>
-                        <div class="our-products-item-button">В магазин</div>
+                        <button class="our-products-item-button">В магазин</button>
                     </div>
                 </div>
             </article>
@@ -464,7 +461,7 @@
                             <div class="our-products-item-value-sale">500 p</div>
                             <div class="our-products-item-value">400 p</div>
                         </div>
-                        <div class="our-products-item-button">В магазин</div>
+                        <button class="our-products-item-button">В магазин</button>
                     </div>
                 </div>
             </article>
@@ -494,39 +491,41 @@
     </footer>
     <div class="popup visually-hidden">
         <div class="popup-content">
-            <div class="popup-close">
+            <button class="popup-close">
                 <img src="svg/form-x.svg" alt="закрыть" class="popup-close-image">
-            </div>
+            </button>
             <h2 class="popup-content-title">Ваш фидбек</h2>
-            <form class="form-select">
-                <label class="form-select-label">
-                    <span class="form-select-label-text">Как часто вы заходите на сайт?</span>
-                    <select class="form-select-label-select">
-                        <option value="1" selected>Почти каждый день</option>
-                        <option value="2">Раз в несколько дней</option>
-                        <option value="3">Раз в несколько недель</option>
-                        <option value="4">Несколько раз в год</option>
-                    </select>
-                </label>
+            <form class="popup-form">
+                <div class="select">
+                    <label class="form-select-label">
+                        <span class="form-select-label-text">Как часто вы заходите на сайт?</span>
+                        <select class="form-select-label-select">
+                            <option value="1" selected>Почти каждый день</option>
+                            <option value="2">Раз в несколько дней</option>
+                            <option value="3">Раз в несколько недель</option>
+                            <option value="4">Несколько раз в год</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="radio">
+                    <label class="form-radio-label">
+                        <span class="form-radio-label-text">Вы подписаны на e-mail рассылку?</span>
+                        <input type="radio" name="radio-button" class="input-radio">
+                        <span class="input-radio-button">Да</span>
+                    </label>
+                    <label class="form-radio-label">
+                        <input type="radio" name="radio-button" class="input-radio"> 
+                        <span class="input-radio-button">Нет</span>
+                    </label>
+                </div>
+                <div class="message">
+                    <label class="form-message-label">
+                        <span class="form-message-label-text">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+                        <textarea class="form-message-label-textarea" placeholder="Может, больше рецептов?" required></textarea>
+                    </label>
+                </div>
+                <button class="popup-button">Отправить</button>
             </form>
-            <form class="form-radio">
-                <label class="form-radio-label">
-                    <span class="form-radio-label-text">Вы подписаны на e-mail рассылку?</span>
-                    <input type="radio" name="radio-button" class="input-radio">
-                    <span class="input-radio-button">Да</span>
-                </label>
-                <label class="form-radio-label">
-                    <input type="radio" name="radio-button" class="input-radio"> 
-                    <span class="input-radio-button">Нет</span>
-                </label>
-            </form>
-            <form class="form-message">
-                <label class="form-message-label">
-                    <span class="form-message-label-text">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
-                    <textarea class="form-message-label-textarea" placeholder="Может, больше рецептов?" required></textarea>
-                </label>
-            </form>
-            <button class="popup-button">Отправить</button>
         </div>
     </div>
 </body>
