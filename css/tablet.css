@@ -1,17 +1,19 @@
-@media (orientation: landscape) and (min-width: 1200px) {
+@media (orientation: landscape) and (min-width: 641px)  and (max-width: 1199px) {
     .trends-cards {
         display: grid;
         gap: 4px;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        margin-top: 28px;
+        margin-top: 18px;
     }
 }
 
-.trends-cards {
-    display: grid;
-    gap: 4px;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 18px;
+@media (orientation: portrait) {
+    .trends-cards {
+        display: grid;
+        gap: 4px;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 18px;
+    }
 }
     
 .trend-text-tag-link {

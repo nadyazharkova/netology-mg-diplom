@@ -1,4 +1,4 @@
-@media (orientation: landscape) and (min-width: 641px) {
+@media (orientation: landscape) and (max-width: 640px) {
     .trends-cards {
         display: grid;
         gap: 4px;
@@ -17,7 +17,7 @@ body {
     z-index: 0;
     
     min-width: 320px;
-    padding: 0 0 137px;
+    padding: 0 0 45px;
     
     background-image: url(../images/banner-mobile.jpg);
     background-color: #000000;
