@@ -5,6 +5,14 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
         margin-top: 18px;
     }
+
+    .trend-text-title-link {
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #ffffff;
+    }   
 }
 
 @media (orientation: portrait) {
@@ -14,6 +22,14 @@
         grid-template-columns: 1fr 1fr;
         margin-top: 18px;
     }
+
+    .trend-text-title-link {
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #ffffff;
+    }   
 }
     
 .trend-text-tag-link {
@@ -25,18 +41,11 @@
     color: #b59f5b;
 }
 
-.trend-text-title-link {
-    text-decoration: none;
-    font-size: 17px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #ffffff;
-}    
-
 .header {
     position: relative;
     z-index: 0;
     
+    width: 100%;
     padding: 43px 0 115px;
     
     background-image: url(../images/banner-bg-tablet.jpg);
@@ -197,6 +206,7 @@
 
 .trend-text-tags {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 6px;
     list-style: none;
 }
